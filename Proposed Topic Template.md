@@ -16,7 +16,7 @@ Movie Recommender
 Nâng cấp Movie Recommendation System có sẵn từ console-based thành web application đơn giản với giao diện thân thiện, cải thiện thuật toán gợi ý và thêm các tính năng tương tác cơ bản. Project tập trung vào việc tạo ra một sản phẩm demo hoàn chỉnh trong thời gian ngắn.
 
 ### 🎯 Bối cảnh
-Nhóm đã có sẵn một Movie Recommendation System cơ bản được viết bằng Python, hoạt động trên command line với thuật toán demografic, content-based, collaborative filtering. Tuy nhiên, để phù hợp với yêu cầu bài cuối kì và tạo ra sản phẩm demo, nhóm cần nâng cấp hệ thống này.
+Nhóm đã có sẵn một Movie Recommendation System cơ bản được viết bằng Python, hoạt động trên command line với thuật toán demografic, content-based và collaborative filtering. Tuy nhiên, để phù hợp với yêu cầu bài cuối kì và tạo ra sản phẩm demo, nhóm cần nâng cấp hệ thống này.
 Hạn chế của hệ thống hiện tại:
 
 - Chỉ chạy trên command line, thiếu giao diện người dùng
