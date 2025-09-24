@@ -1,69 +1,67 @@
-> ℹ️ **Note:**  
-> This template is created for students in the "Introduction to Artificial Intelligence" course at VNU-HUS (which I have participated in as a Lecturer) to propose their ideas for a mini-project in the Introduction to AI course. The content is provided in both English and Vietnamese.  
->  
-> ℹ️ **Chú ý:**  
-> Mẫu này được tạo ra cho sinh viên học phần "Nhập môn Trí tuệ Nhân tạo" tại VNU-HUS (mà tôi đã tham gia với vai trò Giảng viên) để đề xuất ý tưởng cho mini-project trong học phần này. Nội dung được cung cấp bằng cả tiếng Anh và tiếng Việt.  
->  
-> ✍️ **Instructions:** Fill in the details below in *one* language (English or Vietnamese), then **delete the other version** before submission. Please also **delete this remark and instruction section**.  
->  
-> ✍️ **Hướng dẫn:** Điền thông tin dự án bên dưới bằng *một* ngôn ngữ (Tiếng Anh hoặc Tiếng Việt), sau đó **xóa phiên bản còn lại** trước khi nộp. Đồng thời hãy **xóa phần ghi chú và hướng dẫn này**.  
->
-> 🔗 [🇬🇧 English Version](#-english-version) | 🔗 [🇻🇳 Phiên bản Tiếng Việt](#-phiên-bản-tiếng-việt)
-
------
-
-## 🇬🇧 English Version
-
-### 🏷️ Group Name
-Your group name goes here.
-
-### 📝 Project Title
-Title of your project goes here.
-
-### 👥 Team Members
-| 👤 Name 🧑‍🎓     | 🆔 Student ID 🧾     | 🐙 GitHub Username 🔗 |
-|------------------|---------------------|-----------------------|
-| [Your Name 1]    | [Your Student ID 1] | [Your GitHub Username 1] |
-| [Your Name 2]    | [Your Student ID 2] | [Your GitHub Username 2] |
-| [Your Name 3]    | [Your Student ID 3] | [Your GitHub Username 3] |
-
-### 🗒️ Summary
-Briefly describe your project (approx. 200–300 characters).
-
-### 🎯 Background
-Which problems will your project solve? What motivations led you to choose this topic? Why is this topic important or interesting?
-
-### 🚀 Plan
-How do you plan to carry out your project? What are the main steps or milestones? (e.g., data collection, modeling, evaluation, demo)
-
-### 📚 References
-List any references, papers, libraries, or datasets you used when deciding the topic.
-
------
-
-## 🇻🇳 Phiên bản Tiếng Việt
-
 ### 🏷️ Tên nhóm
-Tên nhóm của bạn.
-
+AI Cinephiles
 ### 📝 Tên dự án
-Tên dự án của bạn.
+Movie Recommender
 
 ### 👥 Thành viên nhóm
 | 👤 Họ và tên 🧑‍🎓  | 🆔 Mã sinh viên 🧾 | 🐙 Tên GitHub 🔗     |
 |------------------|---------------------|---------------------|
-| [Tên bạn 1]      | [Mã sinh viên 1]    | [Tên GitHub 1]      |
-| [Tên bạn 2]      | [Mã sinh viên 2]    | [Tên GitHub 2]      |
-| [Tên bạn 3]      | [Mã sinh viên 3]    | [Tên GitHub 3]      |
+| Trần Duy Anh     | 23001828            | duyanhtr130905      |
+| Phạm Hoàng Huy   | 23001887            | justcoffeee         |
+| Hoàng Đức Huy    | 23001884            | NilsNielsen         |
+| Hoàng Khánh An   | 23001819            | AnHoang15           |
+| Lê Thị Linh Chi  | 23001836            | 23001836-pixel      |
 
 ### 🗒️ Tóm tắt
-Mô tả ngắn gọn về dự án của bạn (khoảng 200–300 ký tự).
+Nâng cấp Movie Recommendation System có sẵn từ console-based thành web application đơn giản với giao diện thân thiện, cải thiện thuật toán gợi ý và thêm các tính năng tương tác cơ bản. Project tập trung vào việc tạo ra một sản phẩm demo hoàn chỉnh trong thời gian ngắn.
 
 ### 🎯 Bối cảnh
-Dự án của bạn sẽ giải quyết vấn đề gì? Động lực nào khiến bạn chọn chủ đề này? Tại sao chủ đề này quan trọng hoặc thú vị?
+Nhóm đã có sẵn một Movie Recommendation System cơ bản được viết bằng Python, hoạt động trên command line với thuật toán demografic, content-based, collaborative filtering. Tuy nhiên, để phù hợp với yêu cầu bài cuối kì và tạo ra sản phẩm demo, nhóm cần nâng cấp hệ thống này.
+Hạn chế của hệ thống hiện tại:
+
+- Chỉ chạy trên command line, thiếu giao diện người dùng
+- Thuật toán cơ bản, có thể cải thiện accuracy
+- Thiếu tính năng tương tác và user experience
+- Không có web interface để demo 
 
 ### 🚀 Kế hoạch
-Bạn dự định thực hiện dự án như thế nào? Các bước chính sẽ thực hiện là gì? (ví dụ: thu thập dữ liệu, xây dựng mô hình, đánh giá, demo)
+Giai đoạn 1: Code Analysis & Setup
+
+- Phân tích và hiểu rõ code hiện tại
+- Đánh giá performance và tìm điểm cải thiện
+- Quyết định tech stack đơn giản: Streamlit hoặc Flask + HTML
+- Setup development environment và project structure
+
+Giai đoạn 2: Core Development
+
+- Algorithm Enhancement: Cải thiện thuật toán recommendation hiện có
+- Web Interface: Xây dựng giao diện web đơn giản với Streamlit hoặc Flask
+- User Interaction: Thêm tính năng user input và rating
+- Basic Features: Filtering theo genre, search cơ bản
+
+Giai đoạn 3: Integration & Testing
+
+- System Integration: Kết nối algorithm với web interface
+- Testing: End-to-end testing và bug fixing
+- UI Polish: Cải thiện giao diện và user experience
+- Performance Optimization: Tối ưu tốc độ và accuracy
+
+Giai đoạn 4: Demo & Documentation
+
+- Demo Preparation: Chuẩn bị scenarios và test data
+- Documentation: Hoàn thiện technical docs và user guide
+- Deployment: Deploy lên Streamlit Cloud hoặc Heroku (nếu có thời gian)
+- Presentation: Chuẩn bị slides và demo
 
 ### 📚 Tài liệu tham khảo
-Liệt kê các tài liệu tham khảo, bài báo, thư viện hoặc tập dữ liệu bạn đã sử dụng khi quyết định chủ đề dự án.
+Datasets:
+- TMDB 5000 Movie Dataset: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
+- Movies Dataset: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+Libraries & Tools:
+- Web Framework: Streamlit
+-
+- 
+Technical References:
+- Streamlit Documentation: https://docs.streamlit.io/
+- 
+- 
