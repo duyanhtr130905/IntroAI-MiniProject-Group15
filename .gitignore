@@ -1,0 +1,293 @@
+# ============================================================================
+# .gitignore for INTROAI-MINIPROJECT-GROUP15
+# Movie Recommender System Project
+# ============================================================================
+
+# ============================================================================
+# PYTHON - movie_recommender_system/
+# ============================================================================
+
+# Virtual Environment - RẤT NẶNG! (~500MB+)
+.venv/
+venv/
+env/
+ENV/
+movie_recommender_system/.venv/
+movie_recommender_system/venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+movie_recommender_system/notebook/.ipynb_checkpoints/
+
+# IDE Settings - PyCharm
+.idea/
+movie_recommender_system/.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ============================================================================
+# LARGE MODEL FILES - movie_recommender_system/
+# ============================================================================
+
+# Similarity Matrices (NẶNG! ~50-500MB mỗi file)
+movie_recommender_system/models/*.npy
+movie_recommender_system/results/*.npy
+
+# Pickle files (nếu có)
+movie_recommender_system/models/*.pkl
+movie_recommender_system/models/*.pickle
+
+# HDF5 files (nếu có)
+movie_recommender_system/models/*.h5
+movie_recommender_system/models/*.hdf5
+
+# PyTorch models (nếu có)
+movie_recommender_system/models/*.pt
+movie_recommender_system/models/*.pth
+
+# TensorFlow SavedModel (nếu có)
+movie_recommender_system/models/saved_model/
+
+# ============================================================================
+# DATA FILES - movie_recommender_system/data/
+# ============================================================================
+
+# Nếu CSV files quá lớn (> 100MB), uncomment dòng dưới
+# movie_recommender_system/data/*.csv
+
+# Processed data cache
+movie_recommender_system/data/cache/
+movie_recommender_system/data/temp/
+movie_recommender_system/data/*.cache
+
+# ⚠️ GIỮ LẠI (< 100MB):
+# - tmdb_5000_movies.csv (~1MB)
+# - tmdb_5000_credits.csv (~6MB)
+# → Những files này OK để commit
+
+# ============================================================================
+# REACT APP - movie-recommender-demoapp/
+# ============================================================================
+
+# Dependencies - RẤT NẶNG! (~200MB+)
+movie-recommender-demoapp/node_modules/
+node_modules/
+
+# Build Output
+movie-recommender-demoapp/build/
+movie-recommender-demoapp/dist/
+movie-recommender-demoapp/.cache/
+
+# Logs
+movie-recommender-demoapp/npm-debug.log*
+movie-recommender-demoapp/yarn-debug.log*
+movie-recommender-demoapp/yarn-error.log*
+movie-recommender-demoapp/lerna-debug.log*
+movie-recommender-demoapp/.pnpm-debug.log*
+
+# Environment Variables
+movie-recommender-demoapp/.env
+movie-recommender-demoapp/.env.local
+movie-recommender-demoapp/.env.development.local
+movie-recommender-demoapp/.env.test.local
+movie-recommender-demoapp/.env.production.local
+
+# Editor directories and files
+movie-recommender-demoapp/.DS_Store
+movie-recommender-demoapp/Thumbs.db
+
+# Vite
+movie-recommender-demoapp/.vite/
+
+# ============================================================================
+# LATEX - LaTeX_Template/
+# ============================================================================
+
+# LaTeX auxiliary files
+LaTeX_Template/*.aux
+LaTeX_Template/*.log
+LaTeX_Template/*.out
+LaTeX_Template/*.toc
+LaTeX_Template/*.lof
+LaTeX_Template/*.lot
+LaTeX_Template/*.fls
+LaTeX_Template/*.fdb_latexmk
+LaTeX_Template/*.synctex.gz
+LaTeX_Template/*.bbl
+LaTeX_Template/*.blg
+LaTeX_Template/*.idx
+LaTeX_Template/*.ind
+LaTeX_Template/*.ilg
+
+# LaTeX build directory
+LaTeX_Template/build/
+
+# ⚠️ GIỮ LẠI .pdf nếu đó là báo cáo final!
+# Nếu muốn ignore: LaTeX_Template/*.pdf
+
+# ============================================================================
+# OPERATING SYSTEM
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================================================
+# GENERAL
+# ============================================================================
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.~*
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Compressed archives (nếu không cần thiết)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# SQLite databases (nếu có)
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# Experiment tracking (nếu dùng MLflow, Weights & Biases)
+mlruns/
+wandb/
+
+# Downloaded models (nếu có script download)
+movie_recommender_system/downloaded_models/
+
+# Custom cache directories
+cache/
+.cache/
+
+# ============================================================================
+# SENSITIVE INFORMATION
+# ============================================================================
+
+# API Keys và credentials
+.env
+.env.local
+.env.*.local
+secrets.json
+config/secrets.py
+
+# Private data
+private/
+confidential/
+
+# ============================================================================
+# KEEP THESE FILES (DO NOT IGNORE)
+# ============================================================================
+
+# ✅ IMPORTANT: Những files này PHẢI commit:
+# !movie_recommender_system/requirements.txt
+# !movie-recommender-demoapp/package.json
+# !movie-recommender-demoapp/package-lock.json
+# !README.md
+# !.gitignore
+# !.gitattributes (nếu dùng Git LFS)
+
+# ✅ Results/Visualizations (nhẹ, <1MB mỗi ảnh)
+# !movie_recommender_system/results/*.png
+# !movie_recommender_system/results/*.jpg
+
+# ✅ Source code
+# !movie_recommender_system/src/*.py
+# !movie_recommender_system/notebook/*.ipynb
+# !movie-recommender-demoapp/src/**
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================
+
+# 📝 NOTES:
+# - File này cover toàn bộ project structure
+# - .venv/ và node_modules/ bị ignore → GIẢM ~700MB!
+# - Model .npy files bị ignore → Cần download riêng
+# - CSV data files GIỮ LẠI (đủ nhẹ để commit)
+# 
+# 🔍 KIỂM TRA:
+# - Chạy: git status
+# - KHÔNG thấy .venv/, node_modules/, .idea/
+# - NẾU thấy → .gitignore chưa đúng!
+#
+# 📦 MODEL FILES:
+# - Upload lên Google Drive/Dropbox
+# - Tạo download script
+# - Hoặc dùng Git LFS (nếu < 100MB)
