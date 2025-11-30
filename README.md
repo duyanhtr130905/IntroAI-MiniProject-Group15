@@ -10,7 +10,7 @@
 * **📝 Tiêu đề:** Movie Recommender System  
 * **📅 Ngày nộp:** 30/11/2025  
 * **📄 Báo cáo PDF:** [Xem file PDF](LaTeX%20Template/Main.pdf)
-* **🖥️ Slide thuyết trình:** 🖥️ [Liên kết tới slide thuyết trình trong kho lưu trữ này]  
+* **🖥️ Slide thuyết trình:** [Xem file PDF tại đây](slide/slide.pdf)
 * **📂 Kho lưu trữ:** 📁 https://github.com/duyanhtr130905/IntroAI-MiniProject-Group15
 
 **👥 Thành viên nhóm:**
